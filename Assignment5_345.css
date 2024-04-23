@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  background-color: #8a8a8a;
+  color: #fff;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-section {
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, #f96844, #f7c9a6);
+}
+
+.gradient-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.gradient-section p {
+  font-size: 1.2em;
+  max-width: 500px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #316196;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); 
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

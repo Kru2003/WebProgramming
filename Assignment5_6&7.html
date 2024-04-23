@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables and Pseudo Selectors</title>
+    <style>
+        :root {
+            --main-color: #526c88;
+        }
+
+        .container {
+            background-color: var(--main-color);
+            padding: 20px;
+            color: white;
+        }
+
+        a:hover {
+            color: rgb(197, 146, 83);
+            font-size: 1.2rem;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello, CSS Variables!</h1>
+        <p>This is an example demonstrating the use of CSS variables.</p>
+        <p>This is also an example demonstating the use of Pseudo selectors.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quo
+            quaerat labore est beatae ad distinctio natus, provident doloribus
+            earum!
+        </p>
+    </div>
+    <a href="#">Hover over me</a>
+</body>
+
+</html>
